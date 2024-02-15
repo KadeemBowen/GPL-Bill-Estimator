@@ -31,3 +31,26 @@ function calculateBill() {
 
     document.getElementById("result").innerHTML = resultHTML;
 }
+function addDevice() {
+    var devicesContainer = document.getElementById("devices");
+    var newDevice = document.createElement("div");
+    newDevice.classList.add("device");
+    newDevice.innerHTML = `
+        <label for="appliance">Select Appliance:</label>
+        <select class="appliance" required>
+            <option value="fridge">Fridge</option>
+            <option value="tv">TV</option>
+            <option value="light">Light</option>
+            <option value="microwave">Microwave</option>
+            <option value="fan">Fan</option>
+            <option value="ac">AC</option>
+        </select>
+        <label for="wattage">Enter Wattage (W):</label>
+        <input type="number" class="wattage" required>
+        <label for="amount">Select Quantity:</label>
+        <input type="number" class="amount" value="1" min="1" required>
+        <label for="hours">Enter Daily Usage (hours):</label>
+        <input type="number" class="hours" required>
+    `;
+    devicesContainer.appendChild(newDevice);
+}

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: fit-content;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Align form content to center */
+}
+
+label {
+    display: inline-block;
+    width: 150px; /* Fixed width for labels */
+    margin-bottom: 10px;
+}
+
+input, select {
+    display: inline-block;
+    width: calc(100% - 170px); /* Adjust width to accommodate labels */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add space between buttons */
+}
+
+.reset-button { /* Style for reset button */
+    background-color: #dc3545;
+}
+
+.device {
+    border-bottom: 1px solid #ccc; /* Add border-bottom to all device elements */
+    padding-bottom: 20px; /* Add some padding below each device */
+}
+
+.device:last-child {
+    border-bottom: none; /* Remove border-bottom from the last device element */
+}
+
+button:last-child {
+    margin-bottom: 0; /* Remove margin from last button */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
